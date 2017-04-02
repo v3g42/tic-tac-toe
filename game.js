@@ -55,8 +55,8 @@ class Game {
    * return Grid in a 2 dimensional array
    */
   returnGrid() {
-    return this.grid.reduce(function(a, b, c){
-      if(c % 3 === 0  && c > 0){
+    return this.grid.reduce((a, b, c) => {
+      if(c % this.n === 0  && c > 0){
         a.push([]);
       }
       a[a.length - 1].push(b);

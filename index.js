@@ -3,7 +3,12 @@
 var readline = require('readline');
 const Game = require('./game');
 const Promise = require('bluebird');
-const game = new Game();
+var argv = require('minimist')(process.argv.slice(2));
+
+let n = argv.n || 3;
+let k = argv.k || 3;
+
+const game = new Game(n, k);
 const  rl = readline.createInterface(process.stdin, process.stdout);
 
 const initPlayers = (playerCount=0) => {
