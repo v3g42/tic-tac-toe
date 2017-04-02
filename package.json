@@ -19,6 +19,6 @@
   "homepage": "https://github.com/vivekg342/tic-tac-toe#readme",
   "dependencies": {
     "bluebird": "^3.5.0",
-    "linebyline": "^1.3.0"
+    "minimist": "^1.2.0"
   }
 }
