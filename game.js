@@ -40,7 +40,7 @@ class Game {
    *
    * @param gridPos to be marked for the player
    * @param playerCount player who captured this grid
-   * return false or true whether the grid is marked
+   * @returns false or true whether the grid is marked
      */
   markGrid(gridPos, playerCount) {
     if(['o', 'x'].indexOf(this.grid[gridPos])!==-1) {
@@ -52,7 +52,7 @@ class Game {
   }
 
   /**
-   * return Grid in a 2 dimensional array
+   * @returns Grid in a 2 dimensional array
    */
   returnGrid() {
     return this.grid.reduce((a, b, c) => {
