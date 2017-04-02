@@ -34,7 +34,7 @@ const questionPromise = (question) => {
   });
 };
 
-const nextMoviePromise = (response, name, placeHolder) => {
+const nextMovePromise = (response, name, placeHolder) => {
   if(response.winner) {
     console.log(`Congratulations ${response.winner}! You have won.`);
     return process.exit();
@@ -46,7 +46,7 @@ const nextMoviePromise = (response, name, placeHolder) => {
 
 let initGame = () => {
   return initPlayers().then(() => {
-    return game.play(nextMoviePromise);
+    return game.play(nextMovePromise);
   });
 };
 
