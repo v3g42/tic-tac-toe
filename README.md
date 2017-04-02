@@ -16,11 +16,4 @@ and another field `k` to control number of consecutive squares to win.
 ```
 node index -n 10 -k 3
 ```
-
-#### Project Structure
-
-tic-tac-toe
-|
-|-- game.js (Game class)
-|-- player.js ( Player class)
-|-- index.js (Script to run the code)
+![Screenshot](./screenshots/tic_tac_toe.png)
